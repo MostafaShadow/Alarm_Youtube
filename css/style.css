@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-family: "Tajawal", sans-serif;
+}
+
+.app {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: #592269;
+}
+
+.app .card {
+  background-color: #fff;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px 0px;
+}
+.app .card .card_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app .card .card_header .header_image {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+.app .card .card_body {
+  padding: 20px;
+  display: flex;
+}
+
+.app .card .card_body > div {
+  width: calc(100% / 3);
+  border: 1px solid #ccc;
+  margin: 0px 5px;
+  border-radius: 4px;
+}
+
+.app .card .card_body > div > select {
+  border: none;
+  outline-width: 0;
+  padding: 10px;
+  width: 100%;
+}
+
+.app .card .card_footer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.app .card .card_footer button {
+  padding: 15px 10px;
+  flex: 1;
+  border: none;
+  outline-width: 0;
+  background-color: #592269;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* global  */
+.hidden {
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.4;
+}
